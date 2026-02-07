@@ -3,6 +3,8 @@ import { AssessmentData } from "../types";
 import { QUESTIONS } from "../constants";
 
 const getClient = () => {
+  // Use process.env.API_KEY as per Google GenAI SDK guidelines.
+  // The API key must be obtained exclusively from process.env.API_KEY.
   const apiKey = process.env.API_KEY;
   if (!apiKey) {
     console.warn("API Key is missing. AI features will be disabled.");
