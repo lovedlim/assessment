@@ -1,5 +1,5 @@
 import { supabase, isSupabaseConfigured } from './supabaseClient';
-import { User, UserData, AssessmentData, AdminUserSummary } from '../types';
+import { User, UserData, AdminUserSummary } from '../types';
 import { QUESTIONS } from '../constants';
 
 // Helper: Calculate scores (used for Admin Summary)
